@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            height: 200px;
+            
+        }
+
+        .photos {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            flex: 0 0 30%; /* Adjust width as needed */
+            max-width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            /* Ensure square shape */
+            width: 100%;
+            padding-top: 100%; /* 1:1 aspect ratio */
+            position: relative;
+        }
+
+        .photo img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .links {
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Button Styles */
+        .button-64 {
+            align-items: center;
+            background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+            border: 0;
+            border-radius: 8px;
+            box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            display: flex;
+            font-family: Phantomsans, sans-serif;
+            font-size: 20px;
+            justify-content: center;
+            line-height: 1em;
+            max-width: 100%;
+            min-width: 140px;
+            padding: 3px;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .button-64:active,
+        .button-64:hover {
+            outline: 0;
+        }
+
+        .button-64 span {
+            background-color: rgb(5, 6, 45);
+            padding: 16px 24px;
+            border-radius: 6px;
+            width: 100%;
+            height: 100%;
+            transition: 300ms;
+        }
+
+        .button-64:hover span {
+            background: none;
+        }
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 600px) {
+            .links {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .links a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="AM FASHION Brand Logo PDF.jpg" alt="My Shop Logo">
+        </div>
+        
+        <div class="photos">
+            <div class="photo">
+                <img src="clean-blank-shirt-hanger.jpg" alt="Photo 1">
+            </div>
+            <div class="photo">
+                <img src="blue-jeans-fabric-details.jpg" alt="Photo 2">
+            </div>
+            <div class="photo">
+                <img src="folded-shirt-origami-paper-craft.jpg" alt="Photo 3">
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="https://maps.app.goo.gl/zJsobhyTY8idg6fj9" class="button-64">Location</a>
+            <a href="https://chat.whatsapp.com/HSNkRrxVfEFHYk3KfinE9B" class="button-64">WhatsApp Group</a>
+            <a href="tel;+916363951394" class="button-64">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
